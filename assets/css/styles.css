@@ -1,120 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #157415;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            padding:40px 0;
-        }
-        .titulo{
-            padding: 20px;
-            font-weight: 700;
-        }
-        img {
-            max-width: 64px;
-            height: 64px;
-            margin-left: 24px;
-        }
-        nav {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 16px 0;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 16px 20px;
-        }
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
 
-        nav a.active {
-            background-color: #157415;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 24px 0;
-            width: 100%;
-            position:fixed;
-            left:0px;
-            bottom:0px;
-        }
-        .container {
-            margin: 40px;
-            max-height: 100%;
-            font-weight: 500;
-            background-color: #b1adad;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 1, 0.5);
-            padding: 40px;
-            display: inline-flex;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            margin-top: 40px;
-        }
-        
-        label {
-            margin-top: 16px;
-        }
-        
-        input {
-            padding: 16px;
-            margin: 4px 0;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            width: 240px;
-        }
-        
-        .buttonSend {
-            background-color: #157415;
-            height: 40px;
-            width: 90%;
-            color: #ffffff;
-            padding: 10px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            margin: 24px 24px 0px 0px;
-            
-            width: 240px;
-        }
-        
-        .buttonSend:hover {
-            background-color: #1a8a1a;
-        }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-         /* Estilos para la lista */
-    ul {
-        list-style: none;
-        padding: 0;
-      }
-  
-      li {
-        padding: 16px;
-        border-bottom: 1px solid #e0e0e0;
-        background-color: #f7f7f7;
-        width: 400px;
-      }
-  
-      li:last-child {
-        border-bottom: none;
-      }
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    min-height: 100vh; /* Asegura que el cuerpo de la página tenga al menos el 100% de la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #157415;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.titulo {
+    padding: 20px;
+    font-weight: 700;
+}
+
+img {
+    max-width: 64px;
+    height: 64px;
+    margin-left: 24px;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 16px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 16px 20px;
+}
+
+nav a:hover {
+    background-color: #1a1a1a;
+}
+
+nav a.active {
+    background-color: #157415;
+}
+
+.container-fluid {
+    flex: 1; /* Toma el espacio restante disponible */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    padding: 40px; /* Añadido para dar espacio alrededor del contenido */
+}
+
+.container-fluid h2,
+.container-fluid p,
+.container-fluid iframe,
+.container-fluid form {
+    text-align: center;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 24px 0;
+}
