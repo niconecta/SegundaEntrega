@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    min-height: 100vh; /* Asegura que el cuerpo de la página tenga al menos el 100% de la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: secondary-color;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.titulo {
+    padding: 20px;
+    font-weight: 700;
+}
+
+img {
+    max-width: 64px;
+    height: 64px;
+    margin-left: 24px;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 16px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 16px 20px;
+}
+
+nav a:hover {
+    background-color: #1a1a1a;
+}
+
+nav a.active {
+    background-color: secondary-color;
+}
+
+.container-fluid {
+    flex: 1; /* Toma el espacio restante disponible */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    padding: 40px; /* Añadido para dar espacio alrededor del contenido */
+}
+
+.container-fluid h2,
+.container-fluid p,
+.container-fluid iframe,
+.container-fluid form {
+    text-align: center;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 24px 0;
+}
