@@ -6,45 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="Sistema de administración">
     <meta name="author" content="www.nicolasVera.com">
-    <link rel="icon" type="image/png" href="../favicon.ico">
+    <meta name="keywords" content="administración, ventas, Tronco Matic, clientes, inventario, proveedores">
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Agrega etiquetas OG (Open Graph) -->
+    <meta property="og:title" content="Palo Matic - Sistema de Administración">
+    <meta property="og:description" content="Sistema de administración de ventas - Tronco Matic">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="URL_DE_TU_PAGINA">
+    <meta property="og:image" content="../assets/images/logo.png">
+
+    <!-- Etiqueta canonical para evitar contenido duplicado -->
+    <link rel="canonical" href="https://github.com/niconecta/proyecto.github.io">
+
+    <link rel="icon" type="image/png" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Palo Matic</title>
 </head>
 <body>
+
+    <!-- Agrega un sitemap para ayudar a los motores de búsqueda a indexar tu sitio -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="enProceso">
+
     <header class="bg-success text-white text-center py-4">
-        <h1 class="titulo">Palo Matic</h1>
-        <a href="../Index.html"><img src="../assets/images/logo.png" alt="Logo de la Empresa" class="img-fluid"/> </a>
+        <div class="container">
+            <h1 class="titulo">Palo Matic</h1>
+            <a href="../Index.html"><img src="../assets/images/logo.png" alt="Logo de la Empresa" class="img-fluid"></a>
+        </div>
     </header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="../Index.html">Palo Matic</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="../Index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Ventas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./customer.html">Clientes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./inventory.html">Inventario</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./suppliers.html">Proveedores</a>
-                </li>
-            </ul>
+        <div class="container">
+            <a class="navbar-brand" href="../Index.html">Palo Matic</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/sales.html">Ventas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/customer.html">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/inventory.html">Inventario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/suppliers.html">Proveedores</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <div class="container my-4">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
                 <h2 class="text-center">Sistema de ventas</h2>
                 <form method="post">
                     <label for="nombre">Nombre:</label>
@@ -59,17 +75,28 @@
                     <label for="valor">Valor:</label>
                     <input type="text" id="valor" name="valor" class="form-control" required>
                     
-                    <input class="btn btn-success mt-3" type="submit" value="Vender">
+                    <input class="btn btn-success mt-3" type="submit" value="Agregar A venta">
                 </form>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-12 mx-auto">
+                <h2 class="text-center">Guia</h2>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                  </ul> 
+            </div>
+            <input class="btn btn-success mt-3" type="submit" value="Venta">
+        </div>
     </div>
     <footer class="bg-dark text-white text-center py-4">
-        <p>Tronco Matic &copy; 2023</p>
+        <div class="container">
+            <p>Tronco Matic &copy; 2023</p>
+        </div>
     </footer>
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
-</html>
+</html>  

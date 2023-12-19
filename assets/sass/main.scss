@@ -30,7 +30,6 @@ body {
 img {
     max-width: 64px;
     height: 64px;
-    margin-left: 24px;
 }
 
 nav {
@@ -57,9 +56,9 @@ nav a.active {
 .container-fluid {
     flex: 1; /* Toma el espacio restante disponible */
     display: flex;
-    flex-direction: column;
+    flex-direction: initial;
     align-items: center; /* Centra el contenido verticalmente */
-    justify-content: center; /* Centra el contenido horizontalmente */
+    justify-content: space-evenly; /* Centra espaciado */
     padding: 40px; /* Añadido para dar espacio alrededor del contenido */
 }
 
